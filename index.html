@@ -39,4 +39,54 @@
 
     <script src="script.js"></script> <!-- Link to your JS file -->
 </body>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  h1, h2, h3 {
+    color: #007BFF;
+  }
+  .section {
+    padding: 60px 20px;
+  }
+  .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div data-aos="fade-up" class="project-card">
+  <!-- Project Content -->
+</div>
+
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send</button>
+</form>
+
+<div class="project">
+    <h3>Project Title</h3>
+    <p>Description of the project, what you did, and the technologies used.</p>
+    <a href="https://github.com/your-repo" class="btn">View Code</a>
+    <a href="https://live-demo-link.com" class="btn">Live Demo</a>
+</div>
+  
+
 </html>
