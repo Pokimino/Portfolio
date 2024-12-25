@@ -1,92 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Youssef ZAIMI, étudiant en ingénierie électrique et informatique, passionné par le développement et la résolution de problèmes.">
+    <meta property="og:title" content="Youssef ZAIMI - Portfolio">
+    <meta property="og:description" content="Découvrez mes projets, compétences et contactez-moi.">
+    <meta property="og:image" content="lien-vers-une-image-de-ton-site-ou-profil.jpg">
+    <meta property="og:url" content="https://pokimino.github.io/Portfolio/">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Youssef ZAIMI - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <!-- Liens vers les styles et polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <header>
-        <h1>Youssef ZAIMI</h1>
-        <p>Electrical Engineering & Informatics Student | Developer | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Youssef ZAIMI</h1>
+            <p>Electrical Engineering & Informatics Student | Developer | Problem Solver</p>
+        </div>
     </header>
-    
-    <section id="about">
+
+    <!-- Section About -->
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>Hello, I'm Youssef ZAIMI, a passionate student of Electrical and Informatics Engineering. I love solving problems with code, and I am constantly learning new technologies to build impactful projects.</p>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+    <!-- Section Projects -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
         <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of the project, technologies used, challenges, and outcomes.</p>
+            <h3>My Cool Project</h3>
+            <p>This is a brief description of my project, including the tools and technologies I used, like HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/your-repo" class="btn">View Code</a>
+            <a href="https://live-demo-link.com" class="btn">Live Demo</a>
         </div>
         <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of the project, technologies used, challenges, and outcomes.</p>
+            <h3>Another Project</h3>
+            <p>A description of a second project showcasing your skills and creativity. Mention what problems it solves.</p>
+            <a href="https://github.com/your-repo" class="btn">View Code</a>
+            <a href="https://live-demo-link.com" class="btn">Live Demo</a>
         </div>
-        <!-- Add more projects here -->
     </section>
 
+    <!-- Section Contact -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact: youssef.zaimi21@gmail.com</p>
+        <p>&copy; <span id="current-year"></span> Youssef ZAIMI. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Pokimino" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/youssef-zaimi-227983257" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to your JS file -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
 </body>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-  }
-  h1, h2, h3 {
-    color: #007BFF;
-  }
-  .section {
-    padding: 60px 20px;
-  }
-  .btn {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  .btn:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<div data-aos="fade-up" class="project-card">
-  <!-- Project Content -->
-</div>
-
-<form action="https://formspree.io/f/{your-form-id}" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn">Send</button>
-</form>
-
-<div class="project">
-    <h3>Project Title</h3>
-    <p>Description of the project, what you did, and the technologies used.</p>
-    <a href="https://github.com/your-repo" class="btn">View Code</a>
-    <a href="https://live-demo-link.com" class="btn">Live Demo</a>
-</div>
-  
 
 </html>
