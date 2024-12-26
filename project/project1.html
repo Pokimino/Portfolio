@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cool Project 1 - Project Details</title>
-    <link rel="stylesheet" href="../style.css"> <!-- Utilise le même CSS principal -->
+    <title>Project 1 - Details</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Chemin vers ton CSS global -->
 </head>
-
 <body>
+    <!-- Navigation (reprise du header) -->
     <header>
-        <h1>Smart Home System</h1>
-        <p>A detailed look into my Smart Home System project.</p>
         <nav>
             <ul>
-                <li><a href="../index.html">Back to Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-content">
+            <h1>Project 1</h1>
+            <p>Details about the project.</p>
+        </div>
     </header>
-    
+
+    <!-- Section de détails du projet -->
     <section id="project-details" class="section">
-        <h2>Project Overview</h2>
-        <p>This project is about designing and implementing a smart home system using IoT technology. It allows users to control devices like lights, fans, and security systems remotely.</p>
-        
+        <h2>About Project 1</h2>
+        <p>This project is about... [description détaillée].</p>
+
         <h3>Technologies Used</h3>
         <ul>
-            <li>Arduino</li>
-            <li>Python</li>
-            <li>HTML/CSS/JS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
         </ul>
-        
-        <h3>Challenges and Learnings</h3>
-        <p>One major challenge was ensuring reliable communication between devices. I learned a lot about debugging IoT protocols and optimizing network efficiency.</p>
-        
-        <h3>Gallery</h3>
-        <img src="../images/projet1_1.jpg" alt="Smart Home Screenshot 1" style="width:100%; max-width:600px;">
-        <img src="../images/projet1_2.jpg" alt="Smart Home Screenshot 2" style="width:100%; max-width:600px;">
-        <a href="https://github.com/your-repo" class="btn">View Code</a>
-        <a href="https://live-demo-link.com" class="btn">Live Demo</a>
+
+        <h3>Key Features</h3>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+
+        <h3>See Live Demo</h3>
+        <a href="https://example.com" class="btn" target="_blank">Live Demo</a>
     </section>
-    
+
     <!-- Footer -->
     <footer>
         <p>&copy; <span id="current-year"></span> Youssef ZAIMI. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Pokimino" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/youssef-zaimi-227983257" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
-    <script src="../script.js"></script> <!-- Utilise le même JS principal -->
+
+    <!-- Scripts -->
+    <script src="../script.js"></script> <!-- Chemin vers ton fichier JS global -->
 </body>
 </html>

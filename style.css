@@ -21,7 +21,7 @@ header {
     left: 0;
     width: 100%; /* Prend toute la largeur de la page */
     height: 200px; /* Ajuste la hauteur selon tes préférences */
-    background-image: url('./images/arriere_plan.jpg'); /* Chemin vers ton image */
+    background-image: url('images/arriere_plan.jpg'); /* Chemin vers ton image */
     background-size: cover; /* Ajuste l'image pour couvrir tout le header */
     background-position: center; /* Centre l'image dans le header */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -247,4 +247,29 @@ footer .social-links a:hover {
 .section {
     opacity: 0;
     transform: translateY(20px); /* Décalage initial avant l'animation */
+}
+
+/* Styling for project details page */
+#project-details {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#project-details h2, #project-details h3 {
+    color: #007BFF;
+}
+
+#project-details ul {
+    list-style: disc inside;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+#project-details ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
