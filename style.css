@@ -16,12 +16,23 @@ body {
 
 /* Header styling */
 header {
-    text-align: center;
-    background-color: #007BFF; /* Couleur bleue plus vive */
-    color: white;
-    padding: 20px 0;
-    border-radius: 8px;
-    margin-bottom: 30px;
+    position: fixed; /* Fixe le header en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 200px; /* Ajuste la hauteur selon tes préférences */
+    background-image: url('./images/arriere_plan.jpg'); /* Chemin vers ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout le header */
+    background-position: center; /* Centre l'image dans le header */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: white; /* Texte en blanc pour contraster avec l'image */
+    z-index: 1000; /* Place le header au-dessus des autres éléments */
+    display: flex; /* Permet d'aligner le contenu du header */
+    flex-direction: column; /* Arrange les éléments en colonne */
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    text-align: center; /* Centre le texte */
+    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
 }
 
 header h1 {
